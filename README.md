@@ -32,18 +32,19 @@ product add the same
     ..* go to shipt folder and run commands
       ..1. `go get -d ./...`  [install all dependencies]
       ..2. `go run application.go`
-      ...before run the it place make sure you have mysql database installed and
+
+      *before run the it place make sure you have mysql database installed and
       change the username and password in /common/common.go
-      ...in db/sample.sql is some dump data i made up for testing can run it to dump data into local database
+      in db/sample.sql is some dump data i made up for testing can run it to dump data into local database*
 
   2. Frontend
      ..* go to shipt/frontend folder and run commands
         ..1. `npm install` [install all dependencies]
         ..2. `npm start` [start frontend]
 
- #### frontend Url is *http://localhost:3000 *
+#### frontend Url is `http://localhost:3000`
 
-*In db folder query.sql for task_3*
+### In db folder query.sql for task_3
 ###
 *After you start Backend you can use the api from some api client(postman) or from browser
 the Url is http://localhost:8080/*
