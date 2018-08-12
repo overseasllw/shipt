@@ -30,19 +30,19 @@ product add the same
   * Backend
     ..* go to shipt folder
      ...run commands
-      ...1 `go get -d ./...`  install all dependencies
-      ...2 `go run application.go`
+      ..1. `go get -d ./...`  install all dependencies
+      ..2. `go run application.go`
       ...before run the it place make sure you have mysql database installed and
       change the username and password in /common/common.go
       ...in db/sample.sql is some dump data i made up for testing can run it to dump data into local database
 
   * Frontend
-     ..* go to shipt/frontend folder
+     ..*go to shipt/frontend folder
       ...run commands
-        ...1 `npm install` install all dependencies
-        ...2 `npm start` start frontend
+        ..1. `npm install` install all dependencies
+        ..2. `npm start` start frontend
 
-  ..* frontend Url is *http://localhost:3000*
+  ..*frontend Url is *http://localhost:3000*
 
 
 ...In db folder query.sql for task_3
@@ -86,10 +86,11 @@ GET /api/v1/sales/products/?from=&to=&type=&export=false
   }
 ]
 ```
+
+Download a csv file for filter data (task_5)
 ```
 GET /api/v1/sales/products/?from=&to=&type=&export=true
 ```
-download a csv file for filter data (task_5)
 
 ```
 GET /api/v1/customers/:customer_id/orders/
