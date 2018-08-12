@@ -51,7 +51,7 @@ product add the same
 the Url is http://localhost:8080/*
 
 ```GET /api/v1/categories/sales/reports/```
-#### Response body is (task_3 and task_4)
+##### Response body is (task_3 and task_4)
 ```
 [
   {
@@ -71,8 +71,11 @@ the Url is http://localhost:8080/*
 ]
 ```
 
-```GET /api/v1/sales/products/?from=&to=&type=&export=false```
-####Response body (get data by date range task_5)
+```
+GET /api/v1/sales/products/?from=&to=&type=&export=false
+```
+##### Response body (get data by date range task_5)
+
 ```
 [
   {
@@ -83,13 +86,15 @@ the Url is http://localhost:8080/*
   }
 ]
 ```
-
+```
 GET /api/v1/sales/products/?from=&to=&type=&export=true
+```
 download a csv file for filter data (task_5)
 
 ```
-GET /api/v1/customers/:customer_id/orders/```
-###Response body (get order for customer task_7)
+GET /api/v1/customers/:customer_id/orders/
+```
+#### Response body (get order for customer task_7)
 ```
 [
   {
