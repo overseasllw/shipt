@@ -2,21 +2,21 @@
  - README_Add_ques.md
 ######
 More work can be done
-1.database design is only several tables, need add trigger for some table,
+1. database design is only several tables, need add trigger for some table,
 then when modify table, the updated_at column can update. and need more tables,
 like some tables related product, now it only have product_entity(basic info) table.
-2.for the current finished APIs, need to consider more to make the data more accurate,
+2. for the current finished APIs, need to consider more to make the data more accurate,
 like refund, canceled, returned
-3.if this a internal tool admin panel, need to add more analysis function like
+3. if this a internal tool admin panel, need to add more analysis function like
 customer cohort, product cohort, analysis customer order  etc.
-4.add customer list/detail dashboard, order list/detail dashboard, and category,
+4. add customer list/detail dashboard, order list/detail dashboard, and category,
 product add the same
-5.in this project i did not user ORM,I can refactor the code use ORM.
-6.if it is a admin, add more APIs, like update/delete/post
-7.add more common helper function like error handling
+5. in this project i did not user ORM,I can refactor the code use ORM.
+6. if it is a admin, add more APIs, like update/delete/post
+7. add more common helper function like error handling
 ######
 
-shipt
+##shipt
  - common [all configuration (if run in local change the database username/password)]
  - db [database table script(task 1,2,3), The project user *Mysql* Database]
  - models [all the Object map to database(Order,Product,Category,User) or Some Object used for task]
@@ -26,31 +26,33 @@ shipt
 
  - screenshot [the screenshot for some task_4, task_5, task_7]
 
-How to start
-  Backend
-    go to shipt folder
-     run commands
-      `go get -d ./...`  [install all dependencies]
-      `go run application.go`
-      before run the it place make sure you have mysql database installed and
+##How to start
+  * Backend
+    ..* go to shipt folder
+     ...run commands
+      ...1 `go get -d ./...`  install all dependencies
+      ...2 `go run application.go`
+      ...before run the it place make sure you have mysql database installed and
       change the username and password in /common/common.go
-      in db/sample.sql is some dump data i made up for testing
-      can run it to dump data into local database
+      ...in db/sample.sql is some dump data i made up for testing can run it to dump data into local database
 
-  Frontend
-    go to shipt/frontend folder
-      run commands
-        `npm install` [install all dependencies]
-        `npm start` [start frontend]
-    frontend Url is http://localhost:3000
+  * Frontend
+     ..* go to shipt/frontend folder
+      ...run commands
+        ...1 `npm install` install all dependencies
+        ...2 `npm start` start frontend
+
+  ..* frontend Url is *http://localhost:3000*
 
 
-In db folder query.sql for task_3
+...In db folder query.sql for task_3
 
-After you start Backend you can use the api from some api client(postman) or from browser
-the Url is http://localhost:8080/
-GET /api/v1/categories/sales/reports/
-Response body is (task_3 and task_4)
+*After you start Backend you can use the api from some api client(postman) or from browser
+the Url is http://localhost:8080/*
+
+```GET /api/v1/categories/sales/reports/```
+#### Response body is (task_3 and task_4)
+```
 [
   {
   "customer_id": 1,
@@ -67,9 +69,11 @@ Response body is (task_3 and task_4)
   "number_purchased": 1
   },
 ]
+```
 
-GET /api/v1/sales/products/?from=&to=&type=&export=false
-Response body (get data by date range task_5)
+```GET /api/v1/sales/products/?from=&to=&type=&export=false```
+####Response body (get data by date range task_5)
+```
 [
   {
   "product_id": 3,
@@ -78,12 +82,15 @@ Response body (get data by date range task_5)
   "quantity": 1
   }
 ]
+```
 
 GET /api/v1/sales/products/?from=&to=&type=&export=true
 download a csv file for filter data (task_5)
 
-GET /api/v1/customers/:customer_id/orders/
-Response body (get order for customer task_7)
+```
+GET /api/v1/customers/:customer_id/orders/```
+###Response body (get order for customer task_7)
+```
 [
   {
   "id": 1,
@@ -115,3 +122,4 @@ Response body (get order for customer task_7)
   "address": null
   }
 ]
+```
