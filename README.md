@@ -29,18 +29,18 @@ product add the same
 
 ## How to start
   1. Backend
-    ..* go to shipt folder and run commands
-      ..1. `go get -d ./...`  [install all dependencies]
-      ..2. `go run application.go`
+     *go to shipt folder and run commands*
+      > `go get -d ./...`  [install all dependencies]
+      > `go run application.go`
 
       *before run the it place make sure you have mysql database installed and
       change the username and password in /common/common.go
       in db/sample.sql is some dump data i made up for testing can run it to dump data into local database*
 
   2. Frontend
-     ..* go to shipt/frontend folder and run commands
-        ..1. `npm install` [install all dependencies]
-        ..2. `npm start` [start frontend]
+     *go to shipt/frontend folder and run commands*
+        > `npm install` [install all dependencies]
+        > `npm start` [start frontend]
 
 #### frontend Url is `http://localhost:3000`
 
