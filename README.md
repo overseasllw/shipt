@@ -1,5 +1,4 @@
-# Additional questions
- - README_Add_ques.md
+# Coding
 ######
 More work can be done
 1. database design is only several tables, need add trigger for some table,
@@ -15,6 +14,8 @@ product add the same
 6. if it is a admin, add more APIs, like update/delete/post
 7. add more common helper function like error handling
 ######
+##### Additional questions
+ - find in README_Add_ques.md
 
 ## shipt
  - common [all configuration (if run in local change the database username/password)]
@@ -27,23 +28,20 @@ product add the same
  - screenshot [the screenshot for some task_4, task_5, task_7]
 
 ## How to start
-  * Backend
-    ..* go to shipt folder
-     ..run commands
+  1. Backend
+    ..* go to shipt folder and run commands
       ..1. `go get -d ./...`  [install all dependencies]
       ..2. `go run application.go`
       ...before run the it place make sure you have mysql database installed and
       change the username and password in /common/common.go
       ...in db/sample.sql is some dump data i made up for testing can run it to dump data into local database
 
-  * Frontend
-     ..* go to shipt/frontend folder
-      ...run commands
+  2. Frontend
+     ..* go to shipt/frontend folder and run commands
         ..1. `npm install` [install all dependencies]
         ..2. `npm start` [start frontend]
 
-  ..* frontend Url is *http://localhost:3000*
-
+ #### frontend Url is *http://localhost:3000 *
 
 *In db folder query.sql for task_3*
 ###
