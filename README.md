@@ -16,7 +16,7 @@ product add the same
 7. add more common helper function like error handling
 ######
 
-##shipt
+## shipt
  - common [all configuration (if run in local change the database username/password)]
  - db [database table script(task 1,2,3), The project user *Mysql* Database]
  - models [all the Object map to database(Order,Product,Category,User) or Some Object used for task]
@@ -26,27 +26,27 @@ product add the same
 
  - screenshot [the screenshot for some task_4, task_5, task_7]
 
-##How to start
+## How to start
   * Backend
     ..* go to shipt folder
-     ...run commands
-      ..1. `go get -d ./...`  install all dependencies
+     ..run commands
+      ..1. `go get -d ./...`  [install all dependencies]
       ..2. `go run application.go`
       ...before run the it place make sure you have mysql database installed and
       change the username and password in /common/common.go
       ...in db/sample.sql is some dump data i made up for testing can run it to dump data into local database
 
   * Frontend
-     ..*go to shipt/frontend folder
+     ..* go to shipt/frontend folder
       ...run commands
-        ..1. `npm install` install all dependencies
-        ..2. `npm start` start frontend
+        ..1. `npm install` [install all dependencies]
+        ..2. `npm start` [start frontend]
 
-  ..*frontend Url is *http://localhost:3000*
+  ..* frontend Url is *http://localhost:3000*
 
 
-...In db folder query.sql for task_3
-
+*In db folder query.sql for task_3*
+###
 *After you start Backend you can use the api from some api client(postman) or from browser
 the Url is http://localhost:8080/*
 
