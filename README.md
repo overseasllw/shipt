@@ -35,7 +35,8 @@ product add the same
 
       *before run the it place make sure you have mysql database installed and
       change the username and password in /common/common.go
-      in db/sample.sql is some dump data i made up for testing can run it to dump data into local database*
+      in db/sample.sql is some dump data i made up for testing can run it to dump data into local database
+      and also there is a ER-Diagram to show the summary*
 
   2. Frontend
      *go to shipt/frontend folder and run commands*
