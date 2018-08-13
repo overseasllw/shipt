@@ -30,7 +30,7 @@ product add the same
 ## How to start
   1. Backend
      *go to shipt folder and run commands*
-      > `go get -d ./...`  [install all dependencies] ** **
+      > `go get -d ./...`  [install all dependencies] \
       > `go run application.go`
 
       *before run the it place make sure you have mysql database installed and
@@ -39,12 +39,12 @@ product add the same
 
   2. Frontend
      *go to shipt/frontend folder and run commands*
-        > `npm install` [install all dependencies] ** **
+        > `npm install` [install all dependencies] \
         > `npm start` [start frontend]
 
 #### frontend Url is `http://localhost:3000`
 
-### In db folder query.sql for task_3
+#### In db folder query.sql for task_3
 ###
 *After you start Backend you can use the api from some api client(postman) or from browser
 the Url is http://localhost:8080/*
