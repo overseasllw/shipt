@@ -1,4 +1,4 @@
-# Coding
+# Coding Project instruction
 ######
 More work can be done
 1. database design is only several tables, need add trigger for some table,
