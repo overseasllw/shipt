@@ -48,9 +48,13 @@ product add the same
 ###
 *After you start Backend you can use the api from some api client(postman) or from browser
 the Url is http://localhost:8080/*
+#######
 
-```GET /api/v1/categories/sales/reports/```
-##### Response body is (task_3 and task_4)
+For task_3/task_4
+```
+GET /api/v1/categories/sales/reports/
+```
+Response body
 ```
 [
   {
@@ -70,11 +74,11 @@ the Url is http://localhost:8080/*
 ]
 ```
 
+Get data by date range task_5
 ```
 GET /api/v1/sales/products/?from=&to=&type=&export=false
 ```
-##### Response body (get data by date range task_5)
-
+Response body
 ```
 [
   {
@@ -86,15 +90,16 @@ GET /api/v1/sales/products/?from=&to=&type=&export=false
 ]
 ```
 
-Download a csv file for filter data (task_5)
+Download a csv file for filter data (task_6)
 ```
 GET /api/v1/sales/products/?from=&to=&type=&export=true
 ```
 
+Get order for customer task_7
 ```
 GET /api/v1/customers/:customer_id/orders/
 ```
-#### Response body (get order for customer task_7)
+Response body
 ```
 [
   {
