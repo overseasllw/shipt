@@ -41,7 +41,7 @@ product add the same
 
   2. Frontend
      *go to shipt/frontend folder and run commands*
-        > `npm install` [install all dependencies,it may have some errors, can ignore them] \
+        > `npm install` [install all dependencies, it may have some errors, can ignore them] \
         > `npm start` [start frontend]
 
 #### frontend Url is `http://localhost:3000`
