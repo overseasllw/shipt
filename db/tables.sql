@@ -1,3 +1,5 @@
+CREATE DATABASE IF NOT EXISTS shipt;
+
 CREATE TABLE IF NOT EXISTS product_entity
   (
      id            INT(10) NOT NULL auto_increment,
