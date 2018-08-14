@@ -38,21 +38,29 @@ CREATE TABLE IF NOT EXISTS category_product
      PRIMARY KEY(id)
   );
 
-CREATE TABLE IF NOT EXISTS sale_order
-  (
-     id              INT(10) NOT NULL auto_increment,
-     confirmation_id BIGINT(10),
-     created_at      TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-     updated_at      TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-     deleted_at      TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-     order_status    ENUM('received', 'processing', 'in_transit',
-     'out_for_delivery', 'delivered', 'canceled', 'refunded'),
-     user_id         INT(10),
-     base_subtotal   DECIMAL(12, 4)
-  ), subtotal DECIMAL(12, 4), discount_amount DECIMAL(12, 4), tax_amount DECIMAL
-(12, 4), grand_total DECIMAL(12, 4), shipping_amount DECIMAL(12, 4),
-shipping_address_id INT(10), billing_address_id INT(10), coupon_rule_id INT(10),
-PRIMARY KEY(id) );
+  CREATE TABLE IF NOT EXISTS sale_order
+    (
+       id                  INT(10) NOT NULL auto_increment,
+       confirmation_id     BIGINT(10),
+       created_at          TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+       updated_at          TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+       deleted_at          TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+       order_status        ENUM('received', 'processing', 'in_transit',
+       'out_for_delivery',
+       'delivered',
+       'canceled', 'refunded'),
+       user_id             INT(10),
+       base_subtotal       DECIMAL(12, 4),
+       subtotal            DECIMAL(12, 4),
+       discount_amount     DECIMAL(12, 4),
+       tax_amount          DECIMAL (12, 4),
+       grand_total         DECIMAL(12, 4),
+       shipping_amount     DECIMAL(12, 4),
+       shipping_address_id INT(10),
+       billing_address_id  INT(10),
+       coupon_rule_id      INT(10),
+       PRIMARY KEY(id)
+    );
 
 CREATE TABLE IF NOT EXISTS sale_order_item
   (
