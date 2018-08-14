@@ -32,9 +32,8 @@ product add the same
      *go to shipt folder and run commands*
       > `go get -d ./...`  [install all dependencies] \
       > `go run application.go`
-
-      #### Before run the it place make sure you have mysql database installed
-      #### Change the username and password in /common/common.go
+      - Before run the it place make sure you have mysql database installed
+      - Change the username and password in /common/common.go
       *in db/sample.sql is some dump data i made up for testing can run it to dump data into local database
       and also there is a `ER-Diagram` to show the summary*
 
