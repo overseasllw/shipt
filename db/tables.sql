@@ -21,6 +21,7 @@ CREATE TABLE IF NOT EXISTS category
      name        VARCHAR(50),
      description TEXT,
      sort_order  INT(10),
+     parent_id   INT(10),
      created_at  TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
      updated_at  TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
      deleted_at  TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
