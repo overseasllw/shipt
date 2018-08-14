@@ -10,7 +10,7 @@ like refund, canceled, returned
 customer cohort, product cohort, analysis customer order  etc.
 4. add customer list/detail dashboard, order list/detail dashboard, and category,
 product add the same
-5. in this project i did not user ORM,I can refactor the code use ORM.
+5. in this project i did not use ORM,I can refactor the code use ORM.
 6. if it is a admin, add more APIs, like update/delete/post
 7. add more common helper function like error handling
 ######
